@@ -1,0 +1,8 @@
+$red: #ccc;
+
+body {
+  background-color: blue;
+  color: $red;
+  transition: all 4s ease;
+  border-radius: 10px 5px;
+}
