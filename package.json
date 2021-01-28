@@ -6,6 +6,7 @@
   "scripts": {
     "watch": "parcel watch ./src/*.pug ./src/js/*.ts ./src/css/main.scss --no-hmr & live-server ./dist/ --wait=1",
     "watch:ts": "tsc -p . --noEmit --watch",
+    "build": "parcel build ./src/*.pug ./src/js/*.ts ./src/css/main.scss",
     "lint:js": "eslint --ext .ts",
     "lint:style": "stylelint **/*.scss --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
