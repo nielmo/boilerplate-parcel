@@ -9,3 +9,6 @@ or
 
 ## To Develop:
 ```yarn dev```
+
+## To Build:
+```yarn build```
