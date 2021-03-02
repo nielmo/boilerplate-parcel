@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "parcel watch ./src/*.pug ./src/js/*.ts ./src/css/main.scss --no-hmr & live-server ./dist/ --wait=1",
+    "watch": "parcel watch ./src/*.pug ./src/js/*.ts ./src/css/main.scss --no-hmr",
     "watch:ts": "tsc -p . --noEmit --watch",
     "build": "parcel build ./src/*.pug ./src/js/*.ts ./src/css/main.scss",
     "lint:js": "eslint --ext .ts",
     "lint:style": "stylelint **/*.scss --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "dev": "concurrently \"yarn:watch\" \"yarn:watch:ts\""
+    "dev": "concurrently \"yarn:watch\" \"yarn:watch:ts\"  \"live-server ./dist/ --wait=1\""
   },
   "keywords": [],
   "author": "",
